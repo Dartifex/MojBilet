@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title=""  description="" roles="*" >
+        <siteMapNode url="index.aspx" title="ДОМА"  description="" />        
+      <siteMapNode url="Status.aspx" title="СТАТУС"  description=""  /><!--Anonymous user only-->
+      <siteMapNode url="Search_byuser.aspx" title="БАРАЈ"  description="" />      
+      <!--Secret\MasterPage.master-->
+      <siteMapNode url="Secret/Selectseat.aspx" title="РЕЗЕРВИРАЈ"  description="" roles="Agent,admin"/>
+      <siteMapNode url="Secret/Cancelticket.aspx" title="ОТКАЖИ БИЛЕТ"  description="" roles="Agent,admin"/>
+      <siteMapNode url="Secret/Change_pass.aspx" title="ПОСТАВКИ"  description="" roles="Agent,admin" />     
+      
+        <!--AdminArea\AgentMasterPage.master-->
+      
+      <siteMapNode url="login.aspx" title="Најави се"  description=""   />
+      <siteMapNode url="logout.aspx" title="Одјави се"  description=""  />
+    </siteMapNode>
+</siteMap>

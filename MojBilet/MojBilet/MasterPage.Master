@@ -1,0 +1,203 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">   
+    <title>Мој Билет</title>
+    <link href="css/Style.css" rel="stylesheet" type="text/css" media="all" />   
+   
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-datepicker.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css.map" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+     <div id="container">
+        <!--header starts -->
+        <div id="header">
+
+
+            <div class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+              <a class="navbar-brand" href="/index.aspx">
+    <img src="Images/brand.gif" width="30" height="30" runat="server" alt="Brand"/>
+              </a>
+            </div>
+       
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <asp:Menu ID="Menu1" runat="server" CssClass="nav navbar-nav"></asp:Menu>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="~/AdminArea/HomeForAdmin.aspx" runat="server">ИНФО</a></li>
+                  <li><a href="~/AdminArea/CreateAgent.aspx" runat="server">КРЕИРАЈ КОМПАНИЈА</a></li>
+                  <li><a href="~/AdminArea/All_Agents_info.aspx" runat="server">КОМПАНИИ</a></li>
+                  <li><a href="~/AdminArea/Deposit.aspx" runat="server">ДЕПОЗИТ</a></li>
+                  <li><a href="~/AdminArea/Agent_search.aspx" runat="server">ПРЕБАРАЈ</a></li>
+                  <li><a href="~/AdminArea/Bus_list.aspx" runat="server">ЛИСТА АВТОБУСИ</a></li>   
+                  <li><a href="~/AboutUs.aspx" runat="server">ЗА НАС</a></li>   
+
+                     <asp:SiteMapDataSource ID="SiteMapDataSource2" runat="server" 
+                            ShowStartingNode="False" />
+                </ul>
+            </div>
+           
+        </div>
+
+
+
+            <div id="logo">
+                <img alt="" src="~/Images/logo1.gif" runat="server" /></div>
+
+            
+            <div id="logoright"> 
+                     
+                <div id="topbar1" style="float: right">
+
+                    <!--
+                    <div class="empty" style="padding-top:3px; padding-right: 10px; background: #f1f1f1; height: 25px">
+                      <a id="A1" href="~/Agent_list.aspx" runat="server">Агенти</a>|&nbsp; <a href="~/AboutUs.aspx" runat="server">За нас</a>|&nbsp;<a href="~/contactus.aspx" runat="server">Контакт</a></div>
+                    
+                    <div class="empty" style="background: #f1f1f1">
+        
+                        <img height="25" alt="" src="~/Images/top_curve2.gif" width="32"  runat="server" /></div>
+                        -->
+                    <div class="empty" style="width: auto; height: 25px; text-align: center">
+                    </div>
+               </div>       
+                    
+               <div class="empty" style="float: right; margin: 9px 0px 8px; ">
+                    <img height="56" alt="" src="~/Images/paper.gif" width="286"  runat="server" /><asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" 
+                            ShowStartingNode="False" />
+               </div>   
+          
+          <div id="navigation"> 
+             <div>
+
+
+<!--                   <ul class="nav nav-tabs">
+    <li class="active"><a href="/index.aspx">Дома</a></li>
+    <li><a href="/Status.aspx">Статус</a></li>
+    <li><a href="/Search_byuser.aspx">Барај</a></li>
+    <li><a href="/Secret/Selectseat.aspx">Резервирај</a></li>
+    <li><a href="/Secret/Cancelticket.aspx">Откажи билет</a></li>
+    <li><a href="/Secret/Change_pass.aspx">Поставки</a></li>
+    <li><a href="/login.aspx">Најави се</a></li>
+    <li><a href="/logout.aspx">Одјави се</a></li>
+  </ul>   -->
+
+
+           <asp:Menu ID="MainMenu" runat="server" Orientation="Horizontal" MaximumDynamicDisplayLevels="0"
+           DataSourceID="SiteMapDataSource1" DynamicEnableDefaultPopOutImage="False" StaticEnableDefaultPopOutImage="False">
+                <StaticMenuStyle CssClass="menu" />
+                <StaticMenuItemStyle CssClass="menuItem" />
+                <StaticSelectedStyle CssClass="menuSelectedItem" />
+                <DynamicMenuStyle CssClass="menuPopup" />
+                <DynamicMenuItemStyle CssClass="menuPopupItem" Font-Strikeout="False" />
+                <DynamicHoverStyle CssClass="menuPopupItem" />
+                <StaticHoverStyle CssClass="menuItemHover" />
+            </asp:Menu>
+                </div>
+
+   
+    <!--        <div id="submenu" runat="server">
+            <ul id="submenulist">
+            <li><a id="home" href="~/AdminArea/HomeForAdmin.aspx" runat="server">ИНФО</a></li>
+             <li><a id="A3" href="~/AdminArea/CreateAgent.aspx" runat="server">КРЕИРАЈ АГЕНТ</a></li>
+              <li><a id="A4" href="~/AdminArea/All_Agents_info.aspx" runat="server">ЛИСТА АГЕНТИ</a></li>
+               <li><a id="A5" href="~/AdminArea/Deposit.aspx" runat="server">ДЕПОЗИТ</a></li>
+               <li><a id="A6" href="~/AdminArea/Agent_search.aspx" runat="server">ПРЕБАРАЈ АГЕНТ</a></li>
+              <li><a id="A7" href="~/AdminArea/Bus_list.aspx" runat="server">ЛИСТА АВТОБУСИ</a></li>             
+            </ul>
+            </div>    -->
+
+              </div>
+             </div>
+           </div> 
+        <div>
+            <table style="width: 100%;">
+                <tr>
+                    <td colspan="3">
+                        <asp:ScriptManager ID="ScriptManager1" runat="server" />
+                            <asp:UpdatePanel ID="up12" runat="server">
+                            <ContentTemplate>
+                                <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                    <tbody>
+                                        <tr>
+                                            <td class="border-header" style="height: 25px;" valign="middle"
+                                                align="left" width="600">
+                                                ДОБРЕДОЈДОВТЕ <asp:LoginName ID="LoginName1" runat="server" /><asp:Literal ID="litbal" runat="server" />
+                                            </td>
+                                            <td class="border-header-date" style="height: 25px" valign="middle" align="left" width="200">
+                                                <asp:Literal ID="litdate" runat="server"></asp:Literal>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+                        <asp:ContentPlaceHolder ID="content1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+            </table>
+        </div>
+       
+            <div id="footer">
+                <div id="footerlinks">
+                    <div style="float: left">
+                       Copyright © 2016, All rights reserved &nbsp;
+                        <br />
+                    </div>
+                    <div style="float: right; text-align: right">
+                       <asp:Label ID="lblCreatedBy" runat="server"></asp:Label>  
+                    </div>                    
+                </div>                
+            <!--footer ends -->
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            </div> 
+      </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CD9CB229-95F7-4A26-B4C7-BE1249585281}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MojBilet</RootNamespace>
+    <AssemblyName>MojBilet</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminArea\Deposit.aspx" />
+    <Content Include="bin\App_Code.dll" />
+    <Content Include="bin\App_Web_2ted6jil.dll" />
+    <Content Include="bin\App_Web_jaxgazb3.dll" />
+    <Content Include="bin\App_Web_jirv_ycr.dll" />
+    <Content Include="bin\App_Web_yht1mma2.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="bin\MojBilet.dll" />
+    <Content Include="bin\MojBilet.pdb" />
+    <Content Include="bin\roslyn\csc.exe" />
+    <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\roslyn\vbc.exe" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Images\brand.gif" />
+    <Content Include="packages.config" />
+    <Content Include="MasterPage.Master" />
+    <Content Include="bin\App_Code.compiled" />
+    <Content Include="bin\MojBilet.dll.config" />
+    <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Search_byuser.aspx" />
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AboutUs.aspx" />
+    <Content Include="AdminArea\AgentBasicInfo.aspx" />
+    <Content Include="AdminArea\Agent_search.aspx" />
+    <Content Include="AdminArea\All_Agents_info.aspx" />
+    <Content Include="AdminArea\Bus_list.aspx" />
+    <Content Include="AdminArea\CreateAgent.aspx" />
+    <Content Include="AdminArea\HomeForAdmin.aspx" />
+    <Content Include="Agent_list.aspx" />
+    <Content Include="css\Style.css" />
+    <Content Include="db\starbus.mdb" />
+    <Content Include="Images\available_seat_img.gif" />
+    <Content Include="Images\background_drop_menu.jpg" />
+    <Content Include="Images\bg.gif" />
+    <Content Include="Images\booked_seat_img.gif" />
+    <Content Include="Images\btn_go.gif" />
+    <Content Include="Images\coverpic.gif" />
+    <Content Include="Images\go.gif" />
+    <Content Include="Images\inner_middle_line.gif" />
+    <Content Include="Images\ladies_seat_img.gif" />
+    <Content Include="Images\logo1.gif" />
+    <Content Include="Images\paper.gif" />
+    <Content Include="Images\reddot.gif" />
+    <Content Include="Images\selected_seat_img.gif" />
+    <Content Include="Images\tab.gif" />
+    <Content Include="Images\tab_bg.gif" />
+    <Content Include="Images\tab_dim.gif" />
+    <Content Include="Images\top_curve2.gif" />
+    <Content Include="index.aspx" />
+    <Content Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="Secret\Cancelticket.aspx" />
+    <Content Include="Secret\Change_pass.aspx" />
+    <Content Include="Secret\print1.aspx" />
+    <Content Include="Secret\Selectseat.aspx" />
+    <Content Include="Status.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <None Include="AdminArea\AgentBasicInfo.aspx.cs">
+      <DependentUpon>AgentBasicInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </None>
+    <None Include="AdminArea\AgentBasicInfo.aspx.designer.cs">
+      <DependentUpon>AgentBasicInfo.aspx</DependentUpon>
+    </None>
+    <Compile Include="AdminArea\Agent_search.aspx.cs">
+      <DependentUpon>Agent_search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminArea\Agent_search.aspx.designer.cs">
+      <DependentUpon>Agent_search.aspx</DependentUpon>
+    </Compile>
+    <None Include="AdminArea\All_Agents_info.aspx.cs">
+      <DependentUpon>All_Agents_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </None>
+    <None Include="AdminArea\All_Agents_info.aspx.designer.cs">
+      <DependentUpon>All_Agents_info.aspx</DependentUpon>
+    </None>
+    <None Include="AdminArea\Bus_list.aspx.cs">
+      <DependentUpon>Bus_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </None>
+    <None Include="AdminArea\Bus_list.aspx.designer.cs">
+      <DependentUpon>Bus_list.aspx</DependentUpon>
+    </None>
+    <Compile Include="AdminArea\CreateAgent.aspx.cs">
+      <DependentUpon>CreateAgent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <None Include="AdminArea\CreateAgent.aspx.designer.cs">
+      <DependentUpon>CreateAgent.aspx</DependentUpon>
+    </None>
+    <Compile Include="AdminArea\Deposit.aspx.designer.cs">
+      <DependentUpon>Deposit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminArea\HomeForAdmin.aspx.cs">
+      <DependentUpon>HomeForAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminArea\HomeForAdmin.aspx.designer.cs">
+      <DependentUpon>HomeForAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agent_list.aspx.cs">
+      <DependentUpon>Agent_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agent_list.aspx.designer.cs">
+      <DependentUpon>Agent_list.aspx</DependentUpon>
+    </Compile>
+    <None Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </None>
+    <None Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </None>
+    <None Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </None>
+    <None Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </None>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Search_byuser.aspx.cs">
+      <DependentUpon>Search_byuser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </None>
+    <None Include="Search_byuser.aspx.designer.cs">
+      <DependentUpon>Search_byuser.aspx</DependentUpon>
+    </None>
+    <Compile Include="Secret\Cancelticket.aspx.cs">
+      <DependentUpon>Cancelticket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secret\Cancelticket.aspx.designer.cs">
+      <DependentUpon>Cancelticket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secret\Change_pass.aspx.cs">
+      <DependentUpon>Change_pass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secret\Change_pass.aspx.designer.cs">
+      <DependentUpon>Change_pass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secret\print1.aspx.cs">
+      <DependentUpon>print1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secret\print1.aspx.designer.cs">
+      <DependentUpon>print1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secret\Selectseat.aspx.cs">
+      <DependentUpon>Selectseat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secret\Selectseat.aspx.designer.cs">
+      <DependentUpon>Selectseat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status.aspx.designer.cs">
+      <DependentUpon>Status.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4472</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:4472/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
